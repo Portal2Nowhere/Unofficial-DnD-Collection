@@ -10,19 +10,79 @@
          This makes it easier to make new pages for your site. -->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
+<nav id="navbar" style=" position: sticky; : 0px" ><ul>                                          <!--honk-->
+        <li><a href="#"> Home </a></li>
+        <li><a href="https://www.pixilart.com/tnttime1" target="_blank"> Link Art </a></li>
+        <li><a href="#"> Link More Mess </a></li>
+        <li><a href="/thoughts/index.html"> Link My Thoughts </a></li>
+        <li><a href="#"> Link art2 </a></li>
+        <li><a href="#">Lonk maybe games </a></li>
+    </ul></nav></div>
+--------------
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* the text on the nav bar */
+    body {
+        font-family: "Lato", sans-serif;
+    }
+
+    .sidenav { /* background color and shape of block */
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #7fff00;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #4fAf00;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+        color: #1f3f00;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+</style>
+</head>
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/dndtools/Main.php">community zone zone</a>
+    <a href="#"> zags notes</a>
+    <a href="#"> afinas words</a>
+    <a href="#"> magalors design</a>
+</div>
+</br>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; other pages</span>
+--------------
 <body>
-<div id="container"><div id="topBar"></div><div></div>
+<div id="container"><div id="topBar"><marquee>UNDER CONstruction PLEASe STand by</marquee></div>
     <div id="headerArea"> <!--<img src="https://pbs.twimg.com/media/EFLVwkeX4AAF_aO.jpg" width = 100%; height = auto;>-->
 
         <!-- link bar on top of page -->
-        <nav id="navbar" style="margin-bottom: 0px;"><ul>                                          <!--honk-->
-                <li><a href="#"> Home </a></li>
-                <li><a href="https://www.pixilart.com/tnttime1" target="_blank"> Link Art </a></li>
-                <li><a href="#"> Link More Mess </a></li>
-                <li><a href="/thoughts/index.html"> Link My Thoughts </a></li>
-                <li><a href="#"> Link art2 </a></li>
-                <li><a href="#">Lonk maybe games </a></li>
-            </ul></nav></div>
+
 
     <div id="flex">
         <aside id="leftSidebar" style="margin-right: 0px;">
@@ -104,21 +164,10 @@ the images as variables */
 
     :root {
         --header-image: url('https://pbs.twimg.com/media/EFLVwkeX4AAF_aO.jpg');
-        --body-bg-image: url('/over_the_garden_wall_forest.png');
+        --body-bg-image: url('/images!/autumnforestbackground.png');
         /* colors */
         --content: #3FFF00;
     }
-
-    /* if you have the URL of a font, you can set it below */
-    /* feel free to delete this if it's not your vibe */
-
-    /* this seems like a lot for just one font and I would have to agree
-but I wanted to include an example of how to include a custom font.
-If you download a font file you can upload it onto your Neocities
-and then link it! Many fonts have separate files for each style
-(bold, italic, etc. T_T) which is why there are so many!
-
-*/
 
     @font-face {
         font-family: Nunito;
@@ -151,7 +200,7 @@ and then link it! Many fonts have separate files for each style
         /* you can delete the line below if you'd prefer to not use an image */
         background-size: 1500px;
         color: #F4AD20;
-        background-image: var(images!/autumnforestbackground.png);
+        background-image: url('/images!/autumnforestbackground.png');
     }
 
     * {
@@ -311,7 +360,7 @@ left sidebar is 1, content is 2, and right sidebar is 3! */
     #topBar {
         width: 100%;
         height: 30px;
-        padding: 10px;
+        padding: 5px;
         font-size: smaller;
         background-color: #13092D;
     }
@@ -362,5 +411,17 @@ feel free to play around with the order!
 
     }
 </style>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
 </body>
+<!-- links or ideas i like/ want to add/ find cool
+https://wallpapercave.com/over-the-garden-wall-wallpapers
+-->
 </html>
