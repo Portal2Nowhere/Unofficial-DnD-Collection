@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 <body>
 <a href="Bestiary.php">
     <button>Bestiary</button>
@@ -30,6 +33,9 @@
 </a>
 <a href="Spells.php">
     <button>Spells</button>
+</a>
+<a href="/Unofficial-DnD-Collection/skuls%20log/Index(change%20it%20later).php">
+    <button>pew</button>
 </a>
 
 </body>

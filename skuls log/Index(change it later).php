@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
          This makes it easier to make new pages for your site. -->
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<nav id="navbar" style=" position: sticky; : 0px" ><ul>                                          <!--honk-->
+<nav id="navbar" style=" position: sticky; : 0px" ><ul>                                          <!--links-->
         <li><a href="#"> Home </a></li>
         <li><a href="https://www.pixilart.com/tnttime1" target="_blank"> Link Art </a></li>
         <li><a href="#"> Link More Mess </a></li>
@@ -18,66 +18,12 @@
         <li><a href="#"> Link art2 </a></li>
         <li><a href="#">Lonk maybe games </a></li>
     </ul></nav></div>
---------------
+                           <!-- this is the navbar the html part -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-    /* the text on the nav bar */
-    body {
-        font-family: "Lato", sans-serif;
-    }
 
-    .sidenav { /* background color and shape of block */
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #7fff00;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
-    }
 
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #4fAf00;
-        display: block;
-        transition: 0.3s;
-    }
-
-    .sidenav a:hover {
-        color: #1f3f00;
-    }
-
-    .sidenav .closebtn {
-        position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
-    }
-
-    @media screen and (max-height: 450px) {
-        .sidenav {padding-top: 15px;}
-        .sidenav a {font-size: 18px;}
-    }
-</style>
-</head>
-
-<div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/dndtools/Main.php">community zone zone</a>
-    <a href="#"> zags notes</a>
-    <a href="#"> afinas words</a>
-    <a href="#"> magalors design</a>
-</div>
-</br>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; other pages</span>
---------------
-<body>
+                                <!-- this is the end of the navbar -->
+<body id="main">
 <div id="container"><div id="topBar"><marquee>UNDER CONstruction PLEASe STand by</marquee></div>
     <div id="headerArea"> <!--<img src="https://pbs.twimg.com/media/EFLVwkeX4AAF_aO.jpg" width = 100%; height = auto;>-->
 
@@ -86,6 +32,14 @@
 
     <div id="flex">
         <aside id="leftSidebar" style="margin-right: 0px;">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/Unofficial-DnD-Collection/dndtools/Index.php">community&#160zone</a>
+                <a href="\Unofficial-DnD-Collection\skuls%20log\test.html">zags&#160notes</a>
+                <a href="#"> afinas&#160words</a>
+                <a href="#"> magalors&#160design</a>
+            </div>
+            <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; other peoples books</span>
             <!--this is the left bar-->
             <h2>new stuff</h2>
             <div class="box">
@@ -152,6 +106,53 @@
 
     <footer id="footer" style="margin-top: 0px;"></footer></div>
 <!-- THIS IS THE CSS !-->
+
+    <style>                                   /* this is the css style stuff for othe rpages*/
+        /* the text on the nav bar */
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {                                     /* background color and shape of block */
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #7fff00;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {                                 /*how the text in the nav bar looks*/
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #4fAf00;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {                            /*color when hovering on nav bar block*/
+            color: #1f3f00;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+    </style>
+
 <style>
     /* user styles */
 
@@ -412,12 +413,16 @@ feel free to play around with the order!
     }
 </style>
     <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
         }
 
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
         }
     </script>
 </body>
